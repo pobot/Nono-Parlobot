@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/NonoManual.cpp : src/NonoManual.ino
+	@mkdir -p .build/uno/src
+	@echo [93msrc/NonoManual.ino[0m
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/NonoManual.cpp
+	@true
+
